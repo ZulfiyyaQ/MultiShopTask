@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Desktop\\peskits\\MULTİSHOPMVC\\MULTİSHOPMVC\\MULTİSHOPMVC.csproj": {}
+    "C:\\Users\\Asus\\Desktop\\MULTİSHOPMVC\\MULTİSHOPMVC\\MULTİSHOPMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Desktop\\peskits\\MULTİSHOPMVC\\MULTİSHOPMVC\\MULTİSHOPMVC.csproj": {
+    "C:\\Users\\Asus\\Desktop\\MULTİSHOPMVC\\MULTİSHOPMVC\\MULTİSHOPMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\peskits\\MULTİSHOPMVC\\MULTİSHOPMVC\\MULTİSHOPMVC.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\MULTİSHOPMVC\\MULTİSHOPMVC\\MULTİSHOPMVC.csproj",
         "projectName": "MULTİSHOPMVC",
-        "projectPath": "C:\\Users\\Asus\\Desktop\\peskits\\MULTİSHOPMVC\\MULTİSHOPMVC\\MULTİSHOPMVC.csproj",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\MULTİSHOPMVC\\MULTİSHOPMVC\\MULTİSHOPMVC.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Desktop\\peskits\\MULTİSHOPMVC\\MULTİSHOPMVC\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\MULTİSHOPMVC\\MULTİSHOPMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -57,6 +57,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.14, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
             }
           },
           "imports": [

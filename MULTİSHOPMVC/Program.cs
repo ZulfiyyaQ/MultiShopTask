@@ -7,6 +7,13 @@ builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Conf
 var app = builder.Build();
 app.UseRouting();
 app.UseStaticFiles();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+      name: "areas",
+      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+});
 app.MapControllerRoute(
     "MultiShop",
     "{controller=home}/{action=index}/{id?}"

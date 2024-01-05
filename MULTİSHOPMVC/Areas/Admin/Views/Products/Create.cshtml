@@ -1,0 +1,90 @@
+﻿@model CreateProductVM
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">Create Product</h1>
+                        <form class="forms-sample" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label asp-for="MainPhoto">Main Photo</label>
+                                <input asp-for="MainPhoto" class="form-control" accept="image/*">
+                                <span class="text-danger" asp-validation-for="MainPhoto"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Photos">Additional Photos</label>
+                                <input asp-for="Photos" class="form-control" accept="image/*">
+                                <span class="text-danger" asp-validation-for="Photos"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Name">Name</label>
+                                <input asp-for="Name" class="form-control" placeholder="Name">
+                                <span class="text-danger" asp-validation-for="Name"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Price">Price</label>
+                                <input asp-for="Price" class="form-control" placeholder="Price">
+                                <span class="text-danger" asp-validation-for="Price"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Description">Description</label>
+                                <input asp-for="Description" class="form-control" placeholder="Description">
+                                <span class="text-danger" asp-validation-for="Description"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Rating">Rating</label>
+                                <input asp-for="Rating" class="form-control" placeholder="Rating">
+                                <span class="text-danger" asp-validation-for="Rating"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Tvit">Tvit</label>
+                                <input asp-for="Tvit" class="form-control" placeholder="Tvit">
+                                <span class="text-danger" asp-validation-for="Description"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Inst">Inst</label>
+                                <input asp-for="Inst" class="form-control" placeholder="Inst">
+                                <span class="text-danger" asp-validation-for="Inst"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Face">Face</label>
+                                <input asp-for="Face" class="form-control" placeholder="Face">
+                                <span class="text-danger" asp-validation-for="Face"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Pin">Pin</label>
+                                <input asp-for="Pin" class="form-control" placeholder="Pin">
+                                <span class="text-danger" asp-validation-for="Pin"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="CategoryId"> Category </label>
+
+                                <select asp-for="CategoryId" asp-items="new SelectList(Model.Categories,nameof(Category.Id),nameof(Category.Name))" class="form-control">
+                                    <option selected disabled>Choose Category </option>
+                                </select>
+
+                                <span class="text-danger" asp-validation-for="CategoryId">  </span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label asp-for="ColorIds"> Colors</label>
+
+
+                                <select asp-for="ColorIds" asp-items="new SelectList(Model.Colors,nameof(Color.Id),nameof(Color.Name))" class="form-control">
+                                </select>
+
+                                <span class="text-danger" asp-validation-for="ColorIds">  </span>
+                            </div>
+                           
+
+                            <button type="submit" class="btn btn-primary me-2">Submit</button>
+                            <button asp-action="index" asp-controller="products" class="btn btn-danger">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

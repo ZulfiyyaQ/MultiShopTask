@@ -9,25 +9,113 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MULTİSHOPMVC
 build_property.RootNamespace = MULTİSHOPMVC
-build_property.ProjectDir = C:\Users\Asus\Desktop\peskits\MULTİSHOPMVC\MULTİSHOPMVC\
+build_property.ProjectDir = C:\Users\Asus\Desktop\MULTİSHOPMVC\MULTİSHOPMVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Asus\Desktop\peskits\MULTİSHOPMVC\MULTİSHOPMVC
+build_property.MSBuildProjectDirectory = C:\Users\Asus\Desktop\MULTİSHOPMVC\MULTİSHOPMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Asus/Desktop/peskits/MULTİSHOPMVC/MULTİSHOPMVC/Views/Home/Index.cshtml]
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Categories/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Categories/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Colors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29sb3JzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Colors/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29sb3JzXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Colors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29sb3JzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Colors/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29sb3JzXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Products/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Slides/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Slides/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVzXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Slides/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/Slides/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVzXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/peskits/MULTİSHOPMVC/MULTİSHOPMVC/Views/Shared/_Layout.cshtml]
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/peskits/MULTİSHOPMVC/MULTİSHOPMVC/_ViewImports.cshtml]
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Views/Shop/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/Views/Shop/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = X1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/peskits/MULTİSHOPMVC/MULTİSHOPMVC/_ViewStart.cshtml]
+[C:/Users/Asus/Desktop/MULTİSHOPMVC/MULTİSHOPMVC/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = X1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
