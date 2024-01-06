@@ -1,11 +1,8 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using MULTİSHOPMVC.Areas.Admin.ViewModels;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MULTİSHOPMVC.Areas.Admin.ViewModels;
 using MULTİSHOPMVC.DAL;
 using MULTİSHOPMVC.Models;
-using Microsoft.EntityFrameworkCore;
 using MULTİSHOPMVC.Utilities.Extensions;
 using MULTİSHOPMVC.ViewModels;
 

@@ -6,6 +6,8 @@ using MULTİSHOPMVC.Areas.Admin.ViewModels;
 using MULTİSHOPMVC.Areas.Admin.ViewModels;
 using MULTİSHOPMVC.DAL;
 using MULTİSHOPMVC.Models;
+using MULTİSHOPMVC.Utilities.Extensions;
+using MULTİSHOPMVC.ViewModels;
 
 namespace MULTİSHOPMVC.Areas.Admin.Controllers
 {
@@ -13,12 +15,14 @@ namespace MULTİSHOPMVC.Areas.Admin.Controllers
     public class CategoriesController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IWebHostEnvironment _env;
 
-        public CategoriesController(AppDbContext context)
+        public CategoriesController(AppDbContext context, IWebHostEnvironment env)
         {
             _context = context;
+            _env = env;
         }
-       
+
         public async Task<IActionResult> Index(int page = 1)
         {
             double count = await _context.Categories.CountAsync();
@@ -58,10 +62,23 @@ namespace MULTİSHOPMVC.Areas.Admin.Controllers
                 ModelState.AddModelError("Name", "Bele category artiq movcutdur");
                 return View();
             }
+            if (!categoryvm.Photo.ValidateType())
+            {
+                ModelState.AddModelError("Photo", "Sekil file secmeyiniz mutleqdir");
+                return View();
+            }
+            if (!categoryvm.Photo.ValidateSize(2 * 1024))
+            {
+                ModelState.AddModelError("Photo", "Sekil olcusu 2 mb dan artiq olmamalidir");
+                return View();
+            }
 
+
+            string filename = await categoryvm.Photo.CreateFile(_env.WebRootPath, "img");
             Category category = new Category
             {
-                Name = categoryvm.Name
+                Name = categoryvm.Name,
+                ImageUrl = filename
             };
             await _context.Categories.AddAsync(category);
             await _context.SaveChangesAsync();
@@ -78,6 +95,7 @@ namespace MULTİSHOPMVC.Areas.Admin.Controllers
             UpdateCategoriesVM vm = new()
             {
                 Name = existed.Name,
+                ImageUrl=existed.ImageUrl
 
             };
             return View(vm);
@@ -99,8 +117,24 @@ namespace MULTİSHOPMVC.Areas.Admin.Controllers
                 ModelState.AddModelError("Name", "Bele category artiq movcutdur");
                 return View();
             }
-
+            if (categoryvm.Photo is not null)
+            {
+                if (!categoryvm.Photo.ValidateType())
+                {
+                    ModelState.AddModelError("Photo", "Sekil file secmeyiniz mutleqdir");
+                    return View(existed);
+                }
+                if (!categoryvm.Photo.ValidateSize(2 * 1024))
+                {
+                    ModelState.AddModelError("Photo", "Sekil olcusu 2 mb dan artiq olmamalidir");
+                    return View(existed);
+                }
+                string newimage = await categoryvm.Photo.CreateFile(_env.WebRootPath, "img");
+                existed.ImageUrl.DeleteFile(_env.WebRootPath, "img");
+                existed.ImageUrl = newimage;
+            }
             existed.Name = categoryvm.Name;
+            
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));

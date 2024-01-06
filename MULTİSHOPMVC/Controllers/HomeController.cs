@@ -23,11 +23,13 @@ namespace MULTİSHOPMVC.Controllers
 
 
             List<Slide> slides = _context.Slides.OrderBy(p => p.Order).ToList();
-            List<Product> productList = _context.Products.Include(x => x.ProductImages).ToList();
+            List<Product> productList = _context.Products.Include(x => x.ProductImages).Include(x=>x.Category).ToList();
+            List<Category> categories = _context.Categories.Include(c => c.Products).ToList();
 
             HomeVM vm = new HomeVM
             {
                 Products = productList,
+                Categories=categories,
                 Slides = slides,
                 LatestProducts = productList.OrderByDescending(p => p.Id).Take(8).ToList()
             };

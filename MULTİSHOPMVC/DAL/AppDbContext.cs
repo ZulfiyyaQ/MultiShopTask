@@ -17,5 +17,6 @@ namespace MULTİSHOPMVC.DAL
 
         public DbSet<Color> Colors { get; set; }
         public DbSet<ProductColor> ProductColors { get; set; }
+        public DbSet<Setting> Settings { get; set; }
     }
 }

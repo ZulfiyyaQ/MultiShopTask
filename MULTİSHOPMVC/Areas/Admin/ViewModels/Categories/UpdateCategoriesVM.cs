@@ -9,5 +9,7 @@ namespace MULTİSHOPMVC.Areas.Admin.ViewModels
         [MinLength(3, ErrorMessage = "Uzunlugu en azi 3 olmalidir")]
 
         public string Name { get; set; }
+        public string ImageUrl { get; set; }
+        public IFormFile? Photo { get; set; }
     }
 }

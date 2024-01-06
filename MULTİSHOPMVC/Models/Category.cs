@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MULTİSHOPMVC.Models
 {
@@ -11,7 +12,10 @@ namespace MULTİSHOPMVC.Models
         [MinLength(3, ErrorMessage = "Uzunlugu en azi 3 olmalidir")]
 
         public string Name { get; set; }
+        public string? ImageUrl { get; set; }
 
         public List<Product>? Products { get; set; }
+        [NotMapped]
+        public IFormFile? Photo { get; set; }
     }
 }
