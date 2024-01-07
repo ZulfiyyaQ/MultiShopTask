@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MULTİSHOPMVC.DAL;
+using MULTİSHOPMVC.Models;
 
 namespace MULTİSHOPMVC.Services
 {
@@ -14,6 +15,12 @@ namespace MULTİSHOPMVC.Services
         {
             Dictionary<string, string> settings = await _context.Settings.ToDictionaryAsync(s => s.Key, s => s.Value);
             return settings;
+        }
+
+        public List<Category> GetCategories()
+        {
+            List<Category> getCategories = _context.Categories.ToList();
+            return getCategories;
         }
     }
 }
